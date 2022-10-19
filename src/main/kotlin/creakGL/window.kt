@@ -47,8 +47,7 @@ object Window {
 
 fun updateLoop(updateFunction: () -> Unit) {
     glfwPollEvents()
-
     glClear(GL_COLOR_BUFFER_BIT)
-
+    updateFunction()
     Time.updateTime()
 }
