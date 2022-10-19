@@ -3,18 +3,6 @@ package creakGL
 import org.lwjgl.glfw.GLFW.*
 import org.lwjgl.opengl.GL11.*
 
-object Window2 {
-    var glfwWindow = 0L
-    fun create(
-        width: Int,
-        height: Int,
-        title: String = "New CreaK Window",
-        vSyncEnabled: Boolean = false,
-    ) {
-        glfwInit()
-    }
-}
-
 object Window {
     var glfwWindow = 0L
     var width = 1280
@@ -51,13 +39,16 @@ object Window {
 
     fun run(updateFunction: () -> Unit) {
         while (!glfwWindowShouldClose(glfwWindow)) {
-            glfwPollEvents()
-
-            glClear(GL_COLOR_BUFFER_BIT)
-
-            updateFunction()
-
+            updateLoop(updateFunction)
             glfwSwapBuffers(glfwWindow)
         }
     }
+}
+
+fun updateLoop(updateFunction: () -> Unit) {
+    glfwPollEvents()
+
+    glClear(GL_COLOR_BUFFER_BIT)
+
+    Time.updateTime()
 }

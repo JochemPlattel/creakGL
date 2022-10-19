@@ -4,25 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e6f41d1-f7b7-4262-a1e1-7855ef0e7118" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/creakGL/init.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/creakGL/matrix.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/creakGL/vector.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/creakGL/window.kt" afterDir="false" />
+    <list default="true" id="0e6f41d1-f7b7-4262-a1e1-7855ef0e7118" name="Changes" comment="v1">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/creakGL/GlObjects.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/creakGL/Shader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/creakGL/Time.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/creakGL/color.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/creakGL/draw.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/shaders/fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/shaders/vertex.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/creakGL/init.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/creakGL/init.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/creakGL/window.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/creakGL/window.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +31,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
+        <option value="fs-template" />
+        <option value="shader-template" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -49,19 +45,22 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Fs1sAITBdSVq6sUd3DpmlAYjCP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
@@ -84,8 +83,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665266186162</updated>
-      <workItem from="1665266187776" duration="1276000" />
+      <workItem from="1665266187776" duration="4539000" />
+      <workItem from="1665653669003" duration="6894000" />
+      <workItem from="1665742958050" duration="42000" />
+      <workItem from="1665743207725" duration="1337000" />
+      <workItem from="1665754025493" duration="26000" />
+      <workItem from="1665869785011" duration="1630000" />
+      <workItem from="1666017389818" duration="7964000" />
+      <workItem from="1666102088171" duration="8169000" />
+      <workItem from="1666180923516" duration="392000" />
     </task>
+    <task id="LOCAL-00001" summary="v1">
+      <created>1665267521925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665267521925</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,5 +116,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1" />
   </component>
 </project>
